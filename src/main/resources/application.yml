@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jbdc:postgresql://localhost:5432/academia
+    username: hugo
+    password: root
+
+  jpa:
+    show-sql: true
+
+  hibernate:
+    ddl-auto: update
