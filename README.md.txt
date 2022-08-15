@@ -1,3 +1,0 @@
-# Sistema de academia
-
-💪💪💪
