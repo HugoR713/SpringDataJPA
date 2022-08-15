@@ -1,11 +1,19 @@
+server.port: 8081
+
 spring:
   datasource:
-    url: jbdc:postgresql://localhost:5432/academia
-    username: hugo
-    password: root
-
+    url: jdbc:postgresql://localhost:5432/academia?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: Hugo
+    password: longboards13
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
 
-  hibernate:
-    ddl-auto: update
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
