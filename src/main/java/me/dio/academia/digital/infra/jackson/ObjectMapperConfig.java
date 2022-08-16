@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
  */
 @Configuration
 public class ObjectMapperConfig implements Jackson2ObjectMapperBuilderCustomizer {
-	
+
 	@Override
 	public void customize(Jackson2ObjectMapperBuilder jacksonObjectMapperBuilder) {
 		jacksonObjectMapperBuilder.featuresToDisable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
